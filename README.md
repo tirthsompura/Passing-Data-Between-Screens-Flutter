@@ -2,10 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
+## Getting Error with solve this.
 
 1. FOR IOS // GO To ios folder / Runner / info.plist /
 
