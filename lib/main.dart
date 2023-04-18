@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blueGrey,
       ),
       home: const FormScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
