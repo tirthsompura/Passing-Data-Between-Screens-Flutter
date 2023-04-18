@@ -29,15 +29,13 @@ class _FormWidgetScreenState extends State<FormWidgetScreen> {
         margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
         width: MediaQuery.of(context).size.width,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const Center(
-                child: Text(
+            const Text(
               "Please submit the form with correct data !!",
-              style: TextStyle(fontSize: 18, color: Colors.black),
-            )),
+              style: TextStyle(fontSize: 16, color: Colors.black),
+              textAlign: TextAlign.center,
+            ),
 
-            const SizedBox(height: 20),
             //Add Image
             Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,

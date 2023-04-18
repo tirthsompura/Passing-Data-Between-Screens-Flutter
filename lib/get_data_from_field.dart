@@ -96,14 +96,16 @@ class _GetDataScreenState extends State<GetDataScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Container(
-                      width: 80,
-                      child: const Text(
-                        "Email :",
-                        style: TextStyle(
-                            color: Colors.blueGrey,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold),
+                    Expanded(
+                      child: Container(
+                        width: 80,
+                        child: const Text(
+                          "Email :",
+                          style: TextStyle(
+                              color: Colors.blueGrey,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     const SizedBox(
