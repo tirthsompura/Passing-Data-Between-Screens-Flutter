@@ -1,16 +1,17 @@
-# passing_data_between_screens
+# passing_data_between_screens_with_validation
 
-A new Flutter project.
+## Getting Error with solve this.
 
-## Getting Started
+1. FOR IOS // GO To ios folder / Runner / info.plist /
+OPEN info.plist file / <dict> Section add there below lines
 
-This project is a starting point for a Flutter application.
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>To take user profile picture</string>
+  <key>NSCameraUsageDescription</key>
+  <string>To choose user profile picture</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>Used to capture audio for image picker</string>
 
-A few resources to get you started if this is your first Flutter project:
+2. Solve Image.network problem  android/app/src/main/AndroidManifest.xml
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<uses-permission android:name="android.permission.INTERNET" />
