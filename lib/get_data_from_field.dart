@@ -7,7 +7,7 @@ class GetDataScreen extends StatefulWidget {
   File userImage;
 
   GetDataScreen(
-      {required this.name, required this.email, required this.number,required this.userImage});
+      {super.key, required this.name, required this.email, required this.number,required this.userImage});
 
   @override
   State<GetDataScreen> createState() => _GetDataScreenState();
@@ -96,23 +96,21 @@ class _GetDataScreenState extends State<GetDataScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Expanded(
-                      child: Container(
-                        width: 80,
-                        child: const Text(
-                          "Email :",
-                          style: TextStyle(
-                              color: Colors.blueGrey,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold),
-                        ),
+                    const SizedBox(
+                      width: 80,
+                      child: Text(
+                        "Email :",
+                        style: TextStyle(
+                            color: Colors.blueGrey,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
                     const SizedBox(
                       width: 10,
                     ),
                     Text(
-                      widget.email,
+                     widget.email,
                       style: const TextStyle(color: Colors.black, fontSize: 18),
                     ),
                   ],
@@ -136,9 +134,9 @@ class _GetDataScreenState extends State<GetDataScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Container(
+                    const SizedBox(
                       width: 80,
-                      child: const Text(
+                      child: Text(
                         "Number :",
                         style: TextStyle(
                             color: Colors.blueGrey,
